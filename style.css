@@ -296,7 +296,8 @@ footer {
 }
 
 .hero-content {
-  transform: translateY(14px);
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 /* ================= RESPONSIVE ================= */
