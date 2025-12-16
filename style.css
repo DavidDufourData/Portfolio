@@ -36,21 +36,18 @@ body {
 }
 
 .hero-photo {
-  width: 180px;              /* 👈 plus grand que l’image */
-  height: 180px;
-  border-radius: 50%;
-  background: #f0e2df;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 160px;
+  height: 200px;              /* 👈 PLUS HAUT */
+  border-radius: 16px;        /* 👈 plus un cercle */
+  overflow: hidden;
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
 .hero-photo img {
-  width: 150px;              /* 👈 image plus petite */
-  height: 150px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center top;
 }
 
 /* Contenu texte */
