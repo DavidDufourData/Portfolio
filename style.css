@@ -293,11 +293,12 @@ footer {
 }
 
 .hero-photo img {
-  width: 220px;
-  height: 220px;
+  width: 160px;          /* ↓ taille réduite */
+  height: 160px;
   object-fit: cover;
+  object-position: center top; /* 👈 visage prioritaire */
   border-radius: 50%;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
 .hero-content {
@@ -307,10 +308,11 @@ footer {
 
 /* Responsive */
 @media (max-width: 900px) {
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
+  .hero-photo img {
+    width: 130px;
+    height: 130px;
   }
+}
 
   .hero-content {
     text-align: center;
