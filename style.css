@@ -131,24 +131,13 @@ section h3 {
 }
 
 /* ================= SKILLS ================= */
+
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 22px;
+  align-items: stretch;
 }
 
 .skill {
-  background: white;
-  padding: 22px 18px;
-  border-radius: 18px;
-  text-align: center;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 12px;
-  font-weight: 700;
-  transition: transform .25s ease, box-shadow .25s ease;
+  height: 100%;
 }
 
 .skill:hover {
