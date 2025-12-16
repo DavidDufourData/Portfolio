@@ -1,12 +1,14 @@
 :root {
   --green-main: #1f7a6b;
   --green-light: #e6f2ef;
+  --green-soft: #f1f8f6;
   --bg-main: #f7fafc;
   --white: #ffffff;
   --text-main: #1f2937;
   --text-muted: #475569;
 }
 
+/* BASE */
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -18,38 +20,64 @@ body {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 90px 20px;
+  padding: 90px 20px 70px;
   background: linear-gradient(180deg, #ffffff, var(--green-light));
 }
 
 .hero h1 {
   font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .hero h2 {
   color: var(--green-main);
+  margin-bottom: 12px;
 }
 
 .subtitle {
   color: var(--text-muted);
+  font-size: 1.05em;
+  margin-bottom: 8px;
+}
+
+/* LIGNE COMPÉTENCES (HEADER) */
+.skills-line {
+  margin-top: 14px;
+  font-size: 0.95em;
+  color: var(--green-main);
+  font-weight: 600;
 }
 
 /* CTA */
+.cta {
+  margin-top: 30px;
+}
+
 .cta a {
   display: inline-block;
-  margin: 15px 10px;
-  padding: 12px 28px;
+  margin: 10px 12px;
+  padding: 12px 30px;
   border-radius: 30px;
   background: var(--green-main);
   color: white;
   text-decoration: none;
   font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.cta a:hover {
+  background: #17675a;
 }
 
 .cta .secondary {
   background: transparent;
   border: 2px solid var(--green-main);
   color: var(--green-main);
+}
+
+.cta .secondary:hover {
+  background: var(--green-main);
+  color: white;
 }
 
 /* NAV */
@@ -60,13 +88,18 @@ nav {
   border-bottom: 1px solid #e5e7eb;
   padding: 14px;
   text-align: center;
+  z-index: 10;
 }
 
 nav a {
   color: var(--green-main);
-  margin: 0 16px;
+  margin: 0 18px;
   text-decoration: none;
   font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 /* SECTIONS */
@@ -80,9 +113,14 @@ section h3 {
   text-align: center;
   color: var(--green-main);
   margin-bottom: 45px;
+  font-size: 1.9rem;
 }
 
 /* INTRO */
+.intro {
+  background: var(--green-soft);
+}
+
 .intro p {
   max-width: 900px;
   margin: auto;
@@ -95,26 +133,22 @@ section h3 {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 22px;
+  gap: 24px;
 }
 
 .skill {
   background: white;
   padding: 28px;
-  border-radius: 16px;
+  border-radius: 18px;
   text-align: center;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
 }
 
 .skill span {
+  display: block;
+  margin-top: 10px;
   color: var(--text-muted);
-}
-
-.skills-line {
-  margin-top: 12px;
-  font-size: 0.95em;
-  color: #1f7a6b;
-  font-weight: 600;
+  font-size: 0.9em;
 }
 
 /* PROJECTS */
@@ -126,27 +160,34 @@ section h3 {
 
 .project-card {
   background: white;
-  padding: 30px;
-  border-radius: 18px;
+  padding: 32px;
+  border-radius: 20px;
   text-align: center;
   text-decoration: none;
   color: inherit;
-  box-shadow: 0 12px 26px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
 /* CONTACT */
 #contact p {
   text-align: center;
+  font-size: 1.05em;
 }
 
 #contact a {
   color: var(--green-main);
   font-weight: 600;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
 }
 
 /* FOOTER */
@@ -155,4 +196,16 @@ footer {
   padding: 30px;
   background: var(--green-light);
   color: var(--text-muted);
+  font-size: 0.9em;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
 }
