@@ -282,3 +282,42 @@ footer {
     margin: 0 10px;
   }
 }
+/* ================= HERO AVEC PHOTO ================= */
+
+.hero-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-photo img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.hero-content {
+  flex: 1;
+  text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-photo img {
+    width: 180px;
+    height: 180px;
+  }
+}
