@@ -244,3 +244,32 @@ footer {
   font-size: 0.95em;
   font-weight: 600;
 }
+.github-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.github-link a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.github-link a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.github-link img {
+  width: 28px;
+  height: 28px;
+}
