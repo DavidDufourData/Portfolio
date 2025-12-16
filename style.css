@@ -110,6 +110,13 @@ section h3 {
   color: var(--text-muted);
 }
 
+.skills-line {
+  margin-top: 12px;
+  font-size: 0.95em;
+  color: #1f7a6b;
+  font-weight: 600;
+}
+
 /* PROJECTS */
 .projects-grid {
   display: grid;
