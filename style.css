@@ -35,14 +35,20 @@ body {
   gap: 60px;
 }
 
-.hero-photo img {
+.hero-photo {
   width: 160px;
   height: 160px;
-  object-fit: cover;
-  object-position: center 50%;
-  transform: scale(0.92);   /* 👈 CLÉ : dézoom léger */
   border-radius: 50%;
+  overflow: hidden;          /* 👈 le masque */
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  background: #f0e2df;       /* fond discret (optionnel) */
+}
+
+.hero-photo img {
+  width: 100%;
+  height: auto;              /* 👈 clé */
+  display: block;
+  transform: translateY(12px); /* 👈 descend l’image */
 }
 
 /* Contenu texte */
