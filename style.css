@@ -296,7 +296,7 @@ footer {
   width: 160px;
   height: 160px;
   object-fit: cover;
-  object-position: center 35%; /* 👈 descend le cadrage */
+  object-position: center 35%;
   border-radius: 50%;
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
@@ -305,10 +305,11 @@ footer {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* 👈 CLÉ : centrage vertical */
+  justify-content: center;
   text-align: left;
 }
 
+/* ================= RESPONSIVE HERO ================= */
 @media (max-width: 900px) {
   .hero-container {
     flex-direction: column;
@@ -318,14 +319,9 @@ footer {
   .hero-content {
     text-align: center;
   }
-}
-
-  .hero-content {
-    text-align: center;
-  }
 
   .hero-photo img {
-    width: 180px;
-    height: 180px;
+    width: 130px;
+    height: 130px;
   }
 }
