@@ -191,57 +191,67 @@ section h3 {
   box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
-/* ===== VISUELS PROJETS ===== */
-.project-visual {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: #f1f5f9;
-  border-radius: 14px;
-  overflow: hidden;
-  margin-bottom: 18px;
+/* ===== FIX VISUELS PROJETS ===== */
+
+#visuels .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
-.project-visual img {
+#visuels .project-card {
+  background: white;
+  padding: 28px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+}
+
+#visuels .project-visual {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  background: #f1f5f9;
+}
+
+#visuels .project-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
-.project-visual span {
-  color: var(--text-muted);
-  font-size: 0.95em;
-  font-weight: 600;
+#visuels h4 {
+  margin: 12px 0 6px;
 }
 
-/* ================= GITHUB LINK ================= */
+/* ===== FIX GITHUB LINK ===== */
+
 .github-link {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .github-link a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
-  padding: 14px 20px;
+  padding: 14px 26px;
+  border-radius: 999px;
   background: white;
   border: 1px solid var(--border);
-  border-radius: 999px;
-  text-decoration: none;
-  color: var(--text-main);
   font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.github-link a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  color: var(--text-main);
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
 .github-link img {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
 }
 
 /* ================= CONTACT ================= */
@@ -279,12 +289,10 @@ footer {
 }
 
 .hero-photo img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  object-position: center 35%;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  object-fit: cover;
 }
 
 .hero-content {
