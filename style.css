@@ -293,10 +293,10 @@ footer {
 }
 
 .hero-photo img {
-  width: 160px;          /* ↓ taille réduite */
+  width: 160px;
   height: 160px;
   object-fit: cover;
-  object-position: center top; /* 👈 visage prioritaire */
+  object-position: center 35%; /* 👈 descend le cadrage */
   border-radius: 50%;
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
