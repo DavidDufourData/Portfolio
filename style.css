@@ -1,0 +1,151 @@
+:root {
+  --green-main: #1f7a6b;
+  --green-light: #e6f2ef;
+  --bg-main: #f7fafc;
+  --white: #ffffff;
+  --text-main: #1f2937;
+  --text-muted: #475569;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(180deg, #ffffff, var(--green-light));
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero h2 {
+  color: var(--green-main);
+}
+
+.subtitle {
+  color: var(--text-muted);
+}
+
+/* CTA */
+.cta a {
+  display: inline-block;
+  margin: 15px 10px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: var(--green-main);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cta .secondary {
+  background: transparent;
+  border: 2px solid var(--green-main);
+  color: var(--green-main);
+}
+
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 14px;
+  text-align: center;
+}
+
+nav a {
+  color: var(--green-main);
+  margin: 0 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+section h3 {
+  text-align: center;
+  color: var(--green-main);
+  margin-bottom: 45px;
+}
+
+/* INTRO */
+.intro p {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.05em;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.skill {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+
+.skill span {
+  color: var(--text-muted);
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 12px 26px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* CONTACT */
+#contact p {
+  text-align: center;
+}
+
+#contact a {
+  color: var(--green-main);
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: var(--green-light);
+  color: var(--text-muted);
+}
