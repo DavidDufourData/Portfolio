@@ -281,7 +281,7 @@ footer {
 
 /* ================= HERO AVEC PHOTO ================= */
 .hero-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -291,7 +291,7 @@ footer {
 .hero-photo img {
   width: 160px;
   height: 160px;
-  border-radius: 45%;
+  border-radius: 40%;
   object-fit: cover;
 }
 
