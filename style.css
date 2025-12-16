@@ -261,11 +261,13 @@ section h3 {
   line-height: 1.4;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE SKILLS */
 @media (max-width: 600px) {
   .skill {
     padding: 18px 16px;
   }
+}
+
 
 /* PROJECTS */
 .projects-grid {
