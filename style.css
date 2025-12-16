@@ -36,19 +36,21 @@ body {
 }
 
 .hero-photo {
-  width: 160px;
-  height: 160px;
+  width: 180px;              /* 👈 plus grand que l’image */
+  height: 180px;
   border-radius: 50%;
-  overflow: hidden;          /* 👈 le masque */
+  background: #f0e2df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-  background: #f0e2df;       /* fond discret (optionnel) */
 }
 
 .hero-photo img {
-  width: 100%;
-  height: auto;              /* 👈 clé */
-  display: block;
-  transform: translateY(12px); /* 👈 descend l’image */
+  width: 150px;              /* 👈 image plus petite */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* Contenu texte */
