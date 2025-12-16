@@ -255,6 +255,19 @@ section h3 {
   text-decoration: underline;
 }
 
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--green-main);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
 /* ================= FOOTER ================= */
 footer {
   text-align: center;
