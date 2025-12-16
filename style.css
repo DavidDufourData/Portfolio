@@ -1,0 +1,205 @@
+/* ================= VARIABLES ================= */
+:root {
+  --green-main: #1f7a6b;
+  --green-light: #e6f2ef;
+  --green-soft: #f1f8f6;
+  --bg-main: #f7fafc;
+  --white: #ffffff;
+  --text-main: #1f2937;
+  --text-muted: #475569;
+  --border: #e5e7eb;
+}
+
+/* ================= BASE ================= */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* ================= HERO ================= */
+.hero {
+  padding: 90px 20px 70px;
+  background: linear-gradient(180deg, #ffffff, var(--green-light));
+}
+
+/* Conteneur HERO */
+.hero-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Photo (version simple et saine) */
+.hero-photo img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* Contenu texte */
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Titres */
+.hero h1 {
+  font-size: 3rem;
+  margin: 0 0 10px;
+}
+
+.hero h2 {
+  color: var(--green-main);
+  margin: 0 0 12px;
+}
+
+/* Textes */
+.subtitle {
+  color: var(--text-muted);
+  font-size: 1.05em;
+  margin-bottom: 8px;
+}
+
+.skills-line {
+  margin-top: 14px;
+  font-size: 0.95em;
+  color: var(--green-main);
+  font-weight: 600;
+}
+
+/* ================= CTA ================= */
+.cta {
+  margin-top: 30px;
+}
+
+.cta a {
+  display: inline-block;
+  margin: 10px 12px 0 0;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: var(--green-main);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.cta a:hover {
+  background: #17675a;
+}
+
+.cta .secondary {
+  background: transparent;
+  border: 2px solid var(--green-main);
+  color: var(--green-main);
+}
+
+.cta .secondary:hover {
+  background: var(--green-main);
+  color: white;
+}
+
+/* ================= NAV ================= */
+nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  padding: 14px;
+  text-align: center;
+  z-index: 10;
+}
+
+nav a {
+  color: var(--green-main);
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+section h3 {
+  text-align: center;
+  color: var(--green-main);
+  margin-bottom: 45px;
+  font-size: 1.9rem;
+}
+
+/* ================= INTRO ================= */
+.intro {
+  background: var(--green-soft);
+}
+
+.intro p {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.05em;
+}
+
+/* ================= SKILLS ================= */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.skill {
+  background: white;
+  padding: 22px 18px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+  font-weight: 700;
+}
+
+.skill span {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
+}
