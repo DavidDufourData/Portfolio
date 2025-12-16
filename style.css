@@ -291,12 +291,12 @@ footer {
 .hero-photo img {
   width: 160px;
   height: 160px;
-  border-radius: 50%;
+  border-radius: 45%;
   object-fit: cover;
 }
 
 .hero-content {
-  transform: translateY(22px);
+  transform: translateY(14px);
 }
 
 /* ================= RESPONSIVE ================= */
