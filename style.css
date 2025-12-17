@@ -134,24 +134,17 @@ section h3 {
 
 /* ================= SKILLS – GRID CARTES ================= */
 
+/* Grid plus resserrée */
 #skills .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-  max-width: 1100px;
+  max-width: 900px;   /* ⬅️ avant 1100px */
   margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 /* Carte compétence */
 .skill-card {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 28px 26px;
-  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: center;
+  padding: 24px 22px;
 }
 
 /* Titre carte */
@@ -162,18 +155,15 @@ section h3 {
   text-align: center;
 }
 
-/* Listes */
+/* Supprime les puces */
 .skill-card ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
   margin: 0;
 }
 
 .skill-card li {
-  font-size: 0.95rem;
-  color: var(--text-main);
-  margin-bottom: 10px;
-  line-height: 1.5;
+  margin-bottom: 8px;
 }
 
 /* Mise en valeur mots clés */
