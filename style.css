@@ -302,22 +302,24 @@ footer {
   margin: auto;
   display: grid;
   grid-template-columns: 200px 1fr;
-  align-items: center;
   column-gap: 80px;
 }
 
+.hero-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero-photo img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center 30%;
+  object-position: center 40%;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* 🔥 centrage vertical */
+  justify-content: center;
+  min-height: 200px;        /* 🔥 force l’axe visuel */
   text-align: center;
 }
 
@@ -419,10 +421,13 @@ footer {
 }
 
 .intro-note {
-  margin-top: 80px;        /* descend clairement la note */
-  font-size: 0.78em;       /* plus petite */
-  color: #8fa7a0;          /* très doux */
+  margin-top: 100px;        /* 🔥 vrai espace */
+  padding-top: 24px;       /* séparation visuelle */
+  border-top: 1px solid #e0ebe6;
+  font-size: 0.78em;
+  color: #8fa7a0;
   font-style: italic;
-  opacity: 0.7;
+  opacity: 0.75;
 }
+
 
