@@ -52,6 +52,16 @@ body {
   font-weight: 600;
 }
 
+.hero-content .skills-line {
+  max-width: 640px;
+  margin: 18px auto 0;
+  line-height: 1.6;
+  color: var(--green-main);
+  font-weight: 600;
+  text-align: center;
+}
+
+
 /* ================= CTA ================= */
 .cta {
   display: flex;
