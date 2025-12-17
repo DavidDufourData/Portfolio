@@ -132,29 +132,83 @@ section h3 {
 
 /* ================= SKILLS ================= */
 
-.skills-grid {
+/* ================= SKILLS – GRID CARTES ================= */
+
+#skills .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
   max-width: 1100px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-.skill {
-  background: white;
-  padding: 24px 20px;
-  border-radius: 18px;
+/* Carte compétence */
+.skill-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 26px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Titre carte */
+.skill-card h4 {
+  color: var(--green-main);
+  font-size: 1.1rem;
+  margin-bottom: 18px;
   text-align: center;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+}
+
+/* Listes */
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-card li {
+  font-size: 0.95rem;
+  color: var(--text-main);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Mise en valeur mots clés */
+.skill-card strong {
+  color: var(--green-main);
+  font-weight: 700;
+}
+
+/* Niveau de maîtrise */
+.skill-levels li {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.skill-levels span {
+  color: var(--text-muted);
   font-weight: 600;
 }
 
-.skill span {
-  display: block;
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  font-weight: 500;
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+  #skills .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    text-align: center;
+  }
+
+  .skill-levels li {
+    justify-content: center;
+    gap: 6px;
+  }
 }
 
 /* ================= PROJECTS ================= */
