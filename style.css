@@ -326,9 +326,7 @@ footer {
 /* ================= HERO AVEC PHOTO ================= */
 
 .hero-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .hero-photo img {
@@ -340,8 +338,8 @@ footer {
 }
 
 .hero-content {
-  max-width: 600px;
   text-align: left;
+  margin-left: 0;
 }
 
 /* ================= RESPONSIVE ================= */
