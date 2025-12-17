@@ -129,40 +129,43 @@ section h3 {
   font-size: 1.05em;
 }
 
-/* ===== SKILLS BOXES (style GitHub button) ===== */
+/* ===== FORCE CADRES COMPÉTENCES ===== */
 
-.skills-boxes {
-  max-width: 820px;
+#skills {
+  background: var(--green-soft);
+}
+
+#skills .skills-boxes {
+  max-width: 850px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 32px;
 }
 
-.skills-box {
-  background: white;
-  border-radius: 22px;
-  padding: 26px 32px;
+#skills .skills-box {
+  background: #ffffff;
+  border: 2px solid #1f7a6b;   /* 🔥 cadre visible */
+  border-radius: 24px;
+  padding: 30px 36px;
   text-align: center;
-  border: 1px solid var(--border);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
 }
 
-.skills-box h4 {
-  color: var(--green-main);
-  margin-bottom: 16px;
-  font-size: 1.2rem;
+#skills .skills-box h4 {
+  color: #1f7a6b;
+  margin-bottom: 18px;
+  font-size: 1.25rem;
 }
 
-.skills-box p {
+#skills .skills-box p {
   margin: 0;
   line-height: 1.8;
-  color: var(--text-main);
+  font-size: 1rem;
 }
 
-.skills-box strong {
-  color: var(--green-main);
-  font-weight: 700;
+#skills .skills-box strong {
+  color: #1f7a6b;
 }
 
 /* Mobile */
