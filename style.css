@@ -129,74 +129,45 @@ section h3 {
   font-size: 1.05em;
 }
 
-/* ================= SKILLS ================= */
+/* ===== SKILLS PILL STYLE ===== */
 
-/* ================= SKILLS – GRID CARTES ================= */
-
-/* Grid plus resserrée */
-#skills .skills-grid {
-  max-width: 900px;   /* ⬅️ avant 1100px */
+.skills-pill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  max-width: 900px;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-/* Carte compétence */
-.skill-card {
+.skill-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: white;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   text-align: center;
-  padding: 24px 22px;
+  min-width: 240px;
 }
 
-/* Titre carte */
-.skill-card h4 {
-  color: var(--green-main);
-  font-size: 1.1rem;
-  margin-bottom: 18px;
-  text-align: center;
-}
-
-/* Supprime les puces */
-.skill-card ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.skill-card li {
-  margin-bottom: 8px;
-}
-
-/* Mise en valeur mots clés */
-.skill-card strong {
+.skill-pill strong {
   color: var(--green-main);
   font-weight: 700;
+  margin-bottom: 4px;
 }
 
-/* Niveau de maîtrise */
-.skill-levels li {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.skill-levels span {
+.skill-pill span {
+  font-size: 0.85rem;
   color: var(--text-muted);
-  font-weight: 600;
 }
 
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 700px) {
-  #skills .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .skill-card {
-    text-align: center;
-  }
-
-  .skill-levels li {
-    justify-content: center;
-    gap: 6px;
+/* Responsive */
+@media (max-width: 600px) {
+  .skill-pill {
+    min-width: 100%;
   }
 }
 
