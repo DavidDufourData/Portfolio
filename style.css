@@ -52,6 +52,8 @@ body {
 
 /* ================= CTA ================= */
 .cta {
+  display: flex;
+  gap: 16px;
   margin-top: 30px;
 }
 
@@ -301,11 +303,11 @@ footer {
 /* ================= HERO AVEC PHOTO ================= */
 
 .hero-container {
-  max-width: 1200px;
+  max-width: 1000px;                /* 🔥 recentre l’ensemble */
   margin: auto;
   display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 80px;
+  grid-template-columns: 180px 1fr; /* photo + texte */
+  gap: 60px;
   align-items: center;
 }
 
@@ -320,11 +322,13 @@ footer {
 }
 
 .hero-content {
-  text-align: center;
+  text-align: left;                 /* 🔥 clé de l’alignement perçu */
 }
 
-.hero-content h1 {
-  margin-top: 0;
+.hero-content h1,
+.hero-content h2,
+.hero-content p {
+  margin-left: 0;
 }
 
 
