@@ -317,7 +317,11 @@ footer {
 }
 
 .hero-photo img {
-  object-position: center 35%;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 40%;
 }
 
 .hero-content {
