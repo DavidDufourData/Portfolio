@@ -300,57 +300,69 @@ footer {
   font-size: 0.9em;
 }
 
-/* ================= HERO AVEC PHOTO ================= */
+/* ================= HERO PRO STABLE ================= */
 
-.hero-container {
-  max-width: 1000px;                /* 🔥 recentre l’ensemble */
-  margin: auto;
-  display: grid;
-  grid-template-columns: 180px 1fr; /* photo + texte */
-  gap: 60px;
-  align-items: center;
+.hero {
+  background: linear-gradient(180deg, #ffffff, var(--green-light));
+  padding: 120px 20px 100px;
 }
 
-.hero-photo {
+.hero-container {
+  max-width: 1000px;
+  margin: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 60px;
+}
+
+/* PHOTO */
+.hero-photo {
+  flex: 0 0 160px;
 }
 
 .hero-photo img {
-  object-position: center 35%;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
 }
 
+/* TEXTE */
 .hero-content {
-  text-align: left;                 /* 🔥 clé de l’alignement perçu */
+  flex: 1;
+  text-align: left;
 }
 
-.hero-content h1,
-.hero-content h2,
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0 0 10px;
+}
+
+.hero-content h2 {
+  color: var(--green-main);
+  margin: 0 0 14px;
+}
+
 .hero-content p {
-  margin-left: 0;
+  margin: 0 0 12px;
 }
 
 
 /* ================= RESPONSIVE ================= */
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .hero-container {
-    grid-template-columns: 1fr;
-    row-gap: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
     text-align: center;
   }
 }
 
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 2.3rem;
-  }
-
-  nav a {
-    margin: 0 10px;
-  }
-}
 /* ================= PARCOURS DATA ANALYST ================= */
 
 .parcours-data {
