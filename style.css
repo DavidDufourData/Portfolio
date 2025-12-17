@@ -399,3 +399,30 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* ================= INTRO AMÉLIORÉE ================= */
+
+.intro-container {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.intro-container h3 {
+  font-size: 1.9rem;
+  color: var(--green-main);
+  margin-bottom: 28px;
+}
+
+.intro-lead {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 26px;
+  color: var(--text-main);
+}
+
+.intro-note {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: var(--text-muted);
+  font-style: italic;
+}
