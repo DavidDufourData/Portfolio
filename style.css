@@ -340,7 +340,8 @@ footer {
 }
 
 .hero-content {
-  max-width: 650px;
+  max-width: 600px;
+  text-align: left;
 }
 
 /* ================= RESPONSIVE ================= */
