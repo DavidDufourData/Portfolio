@@ -132,35 +132,29 @@ section h3 {
 
 /* ================= SKILLS ================= */
 
-.skills-cards {
+.skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  max-width: 1100px;   /* 👈 identique aux sections */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  max-width: 1100px;
   margin: auto;
 }
 
-.skill-card {
+.skill {
   background: white;
+  padding: 24px 20px;
   border-radius: 18px;
-  padding: 26px 24px;
   text-align: center;
   box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  font-weight: 600;
 }
 
-.skill-card h4 {
-  color: var(--green-main);
-  margin-bottom: 16px;
-}
-
-.skill-card p {
-  margin: 6px 0;
+.skill span {
+  display: block;
+  margin-top: 10px;
   font-size: 0.9rem;
   color: var(--text-muted);
-}
-
-.skill-card strong {
-  color: var(--text-main);
+  font-weight: 500;
 }
 
 /* ================= PROJECTS ================= */
