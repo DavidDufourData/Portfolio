@@ -45,9 +45,11 @@ body {
 }
 
 .skills-line {
-  max-width: 600px;
-  margin: 16px auto 0;
+  max-width: 640px;
+  margin: 18px auto 0;       /* centré proprement */
   line-height: 1.6;
+  color: var(--green-main);
+  font-weight: 600;
 }
 
 /* ================= CTA ================= */
