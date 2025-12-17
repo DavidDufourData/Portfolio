@@ -132,37 +132,25 @@ section h3 {
 
 /* ================= SKILLS ================= */
 
-.value-grid {
+.skills-details {
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  text-align: left;
 }
 
-.value-card {
-  background: white;
-  padding: 22px 20px;
-  border-radius: 16px;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
-}
-
-.value-card h4 {
-  margin: 0 0 10px;
-  font-size: 1.05rem;
+.skills-col h4 {
   color: var(--green-main);
+  font-size: 1rem;
+  margin-bottom: 12px;
+  font-weight: 700;
 }
 
-.value-card p {
-  margin: 0 0 12px;
-  font-size: 0.95rem;
-  color: var(--text-main);
-  line-height: 1.5;
-}
-
-.value-card span {
-  font-size: 0.8rem;
+.skills-col p {
+  margin: 6px 0;
+  font-size: 0.9rem;
   color: var(--text-muted);
-  font-weight: 600;
 }
 
 /* ================= PROJECTS ================= */
