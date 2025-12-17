@@ -421,8 +421,9 @@ footer {
 }
 
 .intro-note {
-  margin-top: 40px;
-  font-size: 0.9em;
-  color: var(--text-muted);
+  margin-top: 70px;          /* la pousse plus bas */
+  font-size: 0.8em;          /* plus petite */
+  color: #7a8f89;            /* plus discrète que text-muted */
   font-style: italic;
+  opacity: 0.8;              /* baisse encore la présence */
 }
