@@ -52,15 +52,6 @@ body {
   font-weight: 600;
 }
 
-.hero-content .skills-line {
-  max-width: 640px;
-  margin-top: 18px;
-  line-height: 1.6;
-  color: var(--green-main);
-  font-weight: 600;
-  text-align: left;        /* 🔥 casse l’héritage */
-}
-
 
 /* ================= CTA ================= */
 .cta {
