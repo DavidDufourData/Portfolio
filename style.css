@@ -21,7 +21,6 @@ body {
 
 /* ================= HERO ================= */
 .hero {
-  text-align: center;
   padding: 90px 20px 70px;
   background: linear-gradient(180deg, #ffffff, var(--green-light));
 }
@@ -329,8 +328,13 @@ footer {
   max-width: 1200px;
   margin: auto;
   display: flex;
-  align-items: center;
+  align-items: center;          /* alignement vertical parfait */
+  justify-content: center;      /* centre le bloc photo + texte */
   gap: 60px;
+}
+
+.hero-photo {
+  flex-shrink: 0;
 }
 
 .hero-photo img {
@@ -342,7 +346,8 @@ footer {
 }
 
 .hero-content {
-  transform: translateY(14px);
+  max-width: 650px;
+  text-align: left;             /* desktop = lisibilité pro */
 }
 
 /* ================= RESPONSIVE ================= */
