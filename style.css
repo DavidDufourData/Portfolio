@@ -349,6 +349,11 @@ footer {
   margin: 0 0 12px;
 }
 
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* ================= RESPONSIVE ================= */
 
